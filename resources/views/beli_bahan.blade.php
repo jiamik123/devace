@@ -52,7 +52,53 @@
         <form  id="beliForm"method="post" action="{{route('bayar_cart')}}">
           {{csrf_field()}}
           <br>
-          //
+          <br>
+          <br>
+          <div class="title m-b-md">
+          <center><h2>Keranjang Barang</h2></center>
+          </div>
+    <table class="table table-striped table-dark" id="cart" width="100%">
+      <div class=".text">
+      <tr>
+        <td>No</td>
+        <td>Nama Barang</td>
+        <td>Jumlah</td>
+        <td>Harga satuan</td>
+        <td>Harga Total</td>
+        <td>Tanggal</td>
+        <td>Action</td>
+      </tr>
+      @foreach($cart as $key => $datas)
+    <tr>
+      <td>
+        {{$key+1}}
+        <input type="text" name="" value="{{$key+1}}" hidden>
+      </td>
+      <td style="display: none;">
+        {{$datas->id}}
+        <input type="hidden" name="id_barang_cart" value="{{$datas->id_barang_cart}}" hidden>
+      </td>
+      <td>
+        {{$datas->nama_barang}}
+        <input type="text" name="namas" value="{{$datas->nama_barang}}" hidden>
+      </td>
+      <td>
+        {{$datas->jumlah_barang}}
+        <input type="number" name="jumlahs" value="{{$datas->jumlah_barang}}" hidden>
+      </td>
+      <td>
+        {{$datas->harga_satuan}}
+        <input type="number" name="harga_satuan" value="{{$datas->harga_satuan}}" hidden>
+      </td>
+      <td>
+        {{$datas->total_harga}}
+        <input type="number" name="total" value="{{$datas->total_harga}}" hidden>
+      </td>
+      <td>{{$datas->created_at}}</td>
+      <td style="padding:5px"><a href="{{url('delete_2/'.$datas->id)}}" class="btn btn-danger" onclick="confirm('yakin mau dihapus ?')" >delete</a>
+      <a href="{{route('edit_cart', ['id' => $datas->id])}}" class="btn btn-primary">Edit</a></td>
+    </tr>
+    </form>
     @endforeach
     </table>
     <input type="submit" name="" value="Bayar" class="btn btn-success">
