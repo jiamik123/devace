@@ -1,0 +1,95 @@
+default sizing and scaling in html website :
+
+for font: 16px font size (equal as 1em)
+NB : bad idea for resizing or scaling some of other default scale(important) etc: font-size : 62.5% , make 1em change to 10px; alternate it using percent for scaling also used, but some cases it's terrible;
+font stack also important cause not all font use the same scaling, change the base font size and line height to suit needs;
+
+for responsive website: 
+
+common break point for scale
+1. 320px - Mobile Portrait
+2. 480px - Mobile Landscape
+3. 600px - Small Tablet
+4. 768px - Tablet Portrait
+5. 1024px - Tablet Landscape/Netbook
+6. 1280px & greater - Desktop
+
+NB: use @mediascreen and (min-width: x){} if needed
+
+these are my mind map about making a beatiful website
+
+    Components
+        Flexible grid
+        Typography
+        Navigation
+        Accessible form controls
+        Carousels
+        Tabbed navigation
+        Responsive tables
+        Accordions
+        Media lists
+        Dropdowns
+        Pagination
+        Data tables
+        Buttons
+        Icon fonts
+    Strategy
+        Responsive images
+        Responsive typography
+        Accessibility architecture
+        Legacy browser support
+        i18n/l10n tolerance
+        Performance budget
+        Interaction/Animations
+        Responsive advertising
+    Layouts
+        Homepage layout
+        Subpage layout
+        Article index layout
+        Article layout
+        Product index layout
+        Product detail layout
+        Sign up flow
+        Checkout flow
+
+
+use it for speeding up your progress making web design : 
+getbootstrap.com
+bulma.io
+brandcolors.net
+fontpair.co
+typ.io
+fontawesome.com
+myfonts.com
+flaticon.com
+ionicons.com
+iconfinder.com
+flickr.com
+proto.io
+
+keep things proportional using CSS preprocessor (same as sass,less,and many) to make job easily and make it simple
+
+more references website to learn more about it : 
+Skillcrush.com
+SmashingMagazine
+CSS Tricks
+Bootstrapping Design
+Hack Design
+teamtreehouse.com
+webdesign.tutplus.com
+codeacademy.com
+
+also search some Web Designer BluePrint for leveling up web design skill
+
+also check this out if you want to look for web designing : 
+blog.marvelapp.com
+medium.com/design
+smashingmagazine.com
+webdesignernews.com
+sitepoint.com/desing-ux
+uimovement.com
+awwwards.com
+onepagelove.com
+
+references about web industry :
+Shop Talk, Big Web Show
